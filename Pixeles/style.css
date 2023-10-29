@@ -56,13 +56,13 @@ h1 {
 
 /* Estilizamos el contenedor principal */
 #contenido {
-    width: 1220px;
+    width: 1160px;/* Ancho total de la caja = width 1160px + 2 padding 20px + 20px = 1120px */
     background-color: white;
     border-radius: 15px;
     margin: 0 auto;
     padding: 30px;
     min-height: 540px; /* 75vh de 720px */
-    overflow:auto;
+    overflow: auto;
 }
 
 /* Estilizamos el texto en negrita */
@@ -72,7 +72,7 @@ h1 {
 
 /* Estilizamos el pie de página */
 footer {
-    width: 1280px;
+    width: 1280px; /* Ancho total de la página */
     height: 36px;
     background-color: #00bf00;
     margin: 0 auto;
@@ -80,56 +80,62 @@ footer {
     color: white;
 }
 
-
-
 /* Cambiamos el color de los enlaces dentro de la sección de noticias */
 .noticias a {
     color: dodgerblue;
 }
+
 #imagen1 {
-    float:left;
+    float: left;
 }
-#imagen1 img{
-    width: 250px;
+
+#imagen1 img {
+    width: 200px;
     height: 200px;
 }
-#parrafo1 p{
+
+#parrafo1 p {
     width: 950px;
     font-size: large;
 }
-#parrafo1{
+
+#parrafo1 {
     width: 950px;
-    float:left;
-
+    float: left;
 }
 
-.noticias h1{
-    text-align:center;
+.noticias h1 {
+    text-align: center;
 }
+
 .imagenNoticias {
-    width: 300px; /* Ancho fijo en píxeles */
+    width: 290px; /* Ancho total de la caja = width 290px + 2 padding 10px + 10px = 310px */
     float: left;
     padding: 10px; /* Agrega un relleno para separar la imagen del contenedor */
 }
+
 .parrafoNoticia {
-    width: 600px; /* Ancho fijo en píxeles */
+    width: 590px; /* Ancho total de la caja = width 590px + 2 padding 10px + 10px = 610px */
     float: left;
     padding: 10px; /* Agrega un relleno para separar el texto del contenedor */
 }
+
 .imagenNoticias img {
     width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
     height: 200px;
 }
+
 .noticias {
     clear: both; /* Limpia los flotantes para que la siguiente sección no se superponga */
 }
+
 form {
-    width: 1160px;
+    width: 800px; /* Ancho total de la caja = width 800px + 2 padding 20px + 20px = 840px */
+    margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f2f2f2;
-    margin: 0 auto;
 }
 form legend{
     text-align:center;
@@ -138,15 +144,15 @@ form legend{
 }
 input[type="text"],
 input[type="date"]
- {
-    width: 1140px;
+{
+    width: 760px; /* Ancho total de la caja = width 760px + 2 padding 8px + 8px + 2 border 1px + 1px = 778px */
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 select{
-    width: 1122px;
+    width: 750px; /* Ancho total de la caja = width 750px + 2 padding 8px + 8px + 2 border 1px + 1px = 768px */
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
