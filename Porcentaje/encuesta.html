@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Óscar Arroyo Aguadero -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Impacto Medioambienta del e-Commerce</title>
+</head>
+<body>
+<header>
+    <h1>Impacto Medioambienta del e-Commerce</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="encuesta.html">Encuesta</a></li>
+    </ul>
+</nav>
+
+
+
+<div id="contenido">
+    <form action="recoger.php" method="GET">
+        <legend>Encuesta</legend>
+        <!-- Campo de texto -->
+        <label for="texto">Nombre y apellido:</label>
+        <input type="text" id="texto" name="texto"><br><br>
+
+        <!-- Campo de fecha -->
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha"><br><br>
+
+        <!-- Campo de radio -->
+        <label>Género:</label><br>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="femenino" name="genero" value="Femenino">
+        <label for="femenino">Femenino</label><br><br>
+
+        <!-- Campos de checkbox -->
+
+        <!-- Para que estos campos se muestren en el php, hay que declarar el array en el html con los corchetes en el nombre
+        name="Nombre[]"-->
+
+
+
+        <label>Etapas académicas estudiadas:</label><br>
+        <input type="checkbox" id="deporte" name="intereses[]" value="ESO">
+        <label for="deporte">ESO</label><br>
+        <input type="checkbox" id="lectura" name="intereses[]" value="BACH">
+        <label for="lectura">Bachillerato</label><br>
+        <input type="checkbox" id="viajes" name="intereses[]" value="FP">
+        <label for="viajes">Ciclo</label><br><br>
+
+        <!--Select provincia-->
+        <label>
+            Ciudad:
+            <select name="provincias">
+                <optgroup label="Badajoz">
+                    <option value="Badajoz" selected>Badajoz</option>
+                    <option value="Mérida" disabled>Mérida</option>
+                </optgroup>
+                <optgroup label="Cáceres">
+                    <option value="Cáceres">Cáceres</option>
+                </optgroup>
+            </select><br><br>
+        </label>
+        <br>
+        <!--Select pregunta-->
+        <label>
+            ¿Que tan satisfecho está con el contenido de esta web?:
+            <select name="pregunta">
+                <option value="nada">Nada satisfecho</option>
+                <option value="poco">Poco satisfecho</option>
+                <option value="algo">Algo satisfecho</option>
+                <option value="satisfecho">Satisfecho</option>
+                <option value="muy">Muy satisfecho</option>
+            </select><br><br>
+        </label>
+        <br>
+        <!--Select múltiple-->
+        <!-- En este caso al poder seleccionar varios eleementos, el nombre del input tambien tiene que ser un array-->
+        <label>
+            Dispositivos:
+            <select multiple size="4" name="dispositivos[]">
+                <option>PC</option>
+                <option>Tablet</option>
+                <option>Portatil</option>
+                <option>Movil</option>
+            </select><br><br>
+        </label>
+        <br>
+        <!--Checkbox términos-->
+        <label for="terminos">Acepto los términos y condiciones</label>
+        <input type="checkbox" id="terminos" name="terminos"><br><br>
+        <!-- Botón de envío -->
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+<footer>
+    <p>Escuela Virgen de Guadalupe - 2023</p>
+</footer>
+</body>
+</html>
