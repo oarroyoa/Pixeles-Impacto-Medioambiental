@@ -3,6 +3,7 @@
 /* Establecemos una fuente de letra única para toda la web */
 html {
     font-family: 'Arial', sans-serif;
+    width: 1280px; /*Activar y desactivar para comprobaciones*/
 }
 
 /* Establecemos de fondo para la web una imagen y cubrimos toda la web */
